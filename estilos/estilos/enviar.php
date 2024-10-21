@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars($_POST['MENSAJE']);
 
     // Configuración del correo
-    $para = "tucorreo@ejemplo.com";  // El correo donde quieres recibir los mensajes
+    $para = "fernandocalligo@gmail.com";  // El correo donde quieres recibir los mensajes
     $asunto = "Nuevo mensaje de contacto";
     
     // Cuerpo del mensaje
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cuerpo .= "Mensaje:\n" . $mensaje . "\n";
 
     // Cabeceras (opcional pero recomendado para evitar que el correo llegue a spam)
-    $cabeceras = "From: noreply@tu-dominio.com" . "\r\n" .
+    $cabeceras = "From: noreply@sanjuanesencias" . "\r\n" .
                  "Reply-To: " . $correo . "\r\n" .
                  "X-Mailer: PHP/" . phpversion();
 
