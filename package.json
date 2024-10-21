@@ -3,6 +3,7 @@
         "phpmailer/phpmailer": "^6.5"
     },
     "dependencies": {
-        "composer": "^4.1.0"
+        "composer": "^4.1.0",
+        "nodemailer": "^6.9.15"
     }
 }

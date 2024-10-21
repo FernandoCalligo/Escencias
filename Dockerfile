@@ -1,11 +1,20 @@
-# Usa una imagen oficial de PHP con Apache
-FROM php:8.0-apache
+# Usar una imagen base de Node.js
+FROM node:14
 
-# Copia los archivos del proyecto al directorio de trabajo de Apache
-COPY . /var/www/html/
+# Establecer el directorio de trabajo
+WORKDIR /usr/src/app
 
-# Habilitar el módulo de reescritura de Apache
-RUN a2enmod rewrite
+# Copiar package.json y package-lock.json
+COPY package*.json ./
 
-# Expone el puerto 80
-EXPOSE 80
+# Instalar las dependencias
+RUN npm install
+
+# Copiar el resto de la aplicación
+COPY . .
+
+# Exponer el puerto
+EXPOSE 3000
+
+# Comando para iniciar la aplicación
+CMD ["node", "server.js"]
