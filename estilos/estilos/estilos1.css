@@ -1,5 +1,5 @@
 @import url(https://fonts,googleapis.com/css?family=yanone+kaffeesatz);
-@import 'https://fonts,googleapis.com/css?family= Open+Sans');
+@import 'https://fonts,googleapis.com/css?family= Open+Sans';
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
@@ -50,13 +50,62 @@ header {
     width: 250px;
     margin-top: 10px;
     transition: all 2s;
-     
+
     
 }
 
 
+.contnum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
 
+.contnum button {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 16px;
+    border: none;
+    background-color: darkturquoise;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contnum a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contnum_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 6px;
+}
+
+.contnum_cont h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.contnum_cont i {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 9px;
+    background: #25D366;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;  
+    margin-right: 10px;
+}
 .menu{
     list-style: none;
     padding: 0;
@@ -135,7 +184,7 @@ section {
 
 #blog{
     display: block;
-    left 50%;
+    left: 50%;
     right:50%;
     background: rgba(0,0,0,0.2);
     margin: 10px;
@@ -147,7 +196,7 @@ section {
 
 #blog .contenedor{
     display: inline-block;
-    left 50%;
+    left: 50%;
     right:50%;
     width: 100%;
     background:rgba(0,0,0,0.2);
@@ -189,12 +238,20 @@ footer .contenedor {
     footer .contenedor {
         justify-content: space-between;
     }
+
+    .contnum_cont {
+        flex-direction: row;
+    }
 }
 
 
 @media (min-width:1024px) {
     .contenedor {
         width: 1000px;
+    }
+
+    .contnum_cont {
+        flex-direction: row;
     }
 }
 
@@ -347,7 +404,8 @@ header label {
     height: 50px;
     text-decoration: none;
     padding: 15px;
-    border-bottom: 10px solid AQUA;
+    background-color: darkturquoise;
+    
 }
 
 .menu a:hover {
