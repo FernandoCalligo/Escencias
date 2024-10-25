@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+.whatsap{
+    width: 9rem;
+    height: 7rem;
+}
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -60,7 +64,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 12px;
 }
 
 .contnum button {
