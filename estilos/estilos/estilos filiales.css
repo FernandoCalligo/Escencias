@@ -273,7 +273,10 @@ header label {
         height: auto;
         transform: translateX(0%);
         float: right;
+        margin-right: 120px;
         display: flex;
+        justify-content: space-between; /* <-- Agregado */
+        gap: 0.5rem; /* Opcional: separa los enlaces */
     }
     
     .menu a {

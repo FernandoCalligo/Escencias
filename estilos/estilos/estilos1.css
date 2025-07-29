@@ -341,15 +341,25 @@ footer .contenedor {
     padding: 20px;
     width: auto;
     margin-top: 180px;
+    flex-direction: column;
+}
+
+#info1 {
+    align-self: center;
 }
 
 
-
-#info .contenedor {
+#info .contenedor1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+       
+}
+#info .contenedor2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- 
        
 }
 
@@ -427,7 +437,10 @@ header label {
         height: auto;
         transform: translateX(0%);
         float: right;
+        margin-right: 120px;
         display: flex;
+        justify-content: space-between; /* <-- Agregado */
+        gap: 0.5rem; /* Opcional: separa los enlaces */
     }
     
     .menu a {
@@ -577,11 +590,32 @@ textarea{
     margin:  0 10px;
 }
 
+.maincont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#infodireccion {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
 
+.contenedorcontacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
+#info1contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 
 

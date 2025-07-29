@@ -141,7 +141,10 @@ header label {
         height: auto;
         transform: translateX(0%);
         float: right;
+        margin-right: 120px;
         display: flex;
+        justify-content: space-between; /* <-- Agregado */
+        gap: 0.5rem; /* Opcional: separa los enlaces */
     }
     
     .menu a {
@@ -166,7 +169,20 @@ video{
     
 }
 
+#info {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+    margin-top: 180px;
+}
 
+#info section {
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+}
 
 form{    
     margin-left: 150px;

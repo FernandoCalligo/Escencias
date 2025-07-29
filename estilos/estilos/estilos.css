@@ -272,6 +272,20 @@ footer .contenedor {
       
 }
 
+.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
 #info {
     background: #333;
     color: #fff;
@@ -355,7 +369,10 @@ header label {
         height: auto;
         transform: translateX(0%);
         float: right;
+        margin-right: 120px;
         display: flex;
+        justify-content: space-between; /* <-- Agregado */
+        gap: 0.5rem; /* Opcional: separa los enlaces */
     }
     
     .menu a {
@@ -427,6 +444,10 @@ textarea{
 	background: #3B0B0B;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
 
 .footer{
     background: #333;
