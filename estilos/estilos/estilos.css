@@ -527,7 +527,34 @@ main {
     margin:  0 10px;
 }
 
-
+@media (max-width:1023px) {
+    .menu {
+        position: fixed !important;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        overflow-y: auto;
+    }
+    #close-menu-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 2.5rem;
+        color: #fff;
+        cursor: pointer;
+        z-index: 10000;
+        display: none;
+    }
+    #menu-bar {
+        display: block;
+        top: -59px;
+        position: relative;
+        z-index: 10000;
+        left: 40vw;
+    }
+}
 
 
 
